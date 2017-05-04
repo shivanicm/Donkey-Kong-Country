@@ -1,0 +1,17 @@
+module TextAddr(
+						 input [9:0] DrawX,
+						 input [9:0] DrawY,
+						 input [18:0] framenum,
+						 output [18:0] out);
+logic[18:0] newX;
+assign newX[9:0] = DrawX;
+
+						 
+always_comb
+begin
+	out1 = (((X + newX - 19'd943) * 19'd1 + (DrawY - 19'd255) * 19'd32) + (19'd2500 * framenum));
+end
+
+endmodule
+
+

@@ -1,0 +1,10 @@
+module BananaCount(input clk,
+						 input reset
+						 input [15:0] X,
+						 input [15:0] Y,
+						 output [4:0] out
+						);
+						
+logic [4:0] bananas;
+
+			

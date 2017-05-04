@@ -1,0 +1,27 @@
+module mapping2(input logic reset,
+					input logic state,
+					input logic [15:0] prevX,
+					input logic [15:0] prevY,
+					input logic [24:0] counter,
+					input logic [3:0] DKmotion,
+					input logic [7:0] keycode,
+					input logic press,
+					input logic [18:0] num,
+					output logic [15:0] X,
+					output logic [15:0] Y,
+					output logic [3:0] no); // 0: no, 1: IdleR1, 2: IdleL1
+													// 5: JumpR21, 6: JumpL21
+
+logic [15:0] ground, ground2;
+
+always_comb 
+begin
+	no = 4'd0;
+	ground = 16'd0;
+	ground2 = 16'd0;
+	
+	if(reset == 1'd1) 
+	begin
+		X = 16'd0;
+		Y = 16'd339 - 16'd100;
+	end
