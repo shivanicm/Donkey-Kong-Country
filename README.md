@@ -1,2 +1,2 @@
 # Donkey-Kong-Country
-Final project for ECE 385 (digital logic design)
+A custom FPGA implementation of the 1994 Donkey Kong Country game created as a final project for ECE 385.
