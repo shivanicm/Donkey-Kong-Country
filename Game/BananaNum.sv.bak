@@ -1,5 +1,0 @@
-module BananaNum (input [4:0] bi,
-						output [2:0] deci);
-						
-						
-endmodule
