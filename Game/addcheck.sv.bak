@@ -1,9 +1,0 @@
-module addcheck(input [19:0] in,
-					  output [18:0] out);
-	
-		if(in >= 20'd1000)
-			assign out = 0;
-		else
-			assign out = in[18:0];
-					  
-endmodule
