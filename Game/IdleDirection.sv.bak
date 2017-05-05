@@ -1,4 +1,0 @@
-module IdleDirection (input
-							 input
-							 output 
-);
