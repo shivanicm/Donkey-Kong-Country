@@ -1,6 +1,0 @@
-
-module Control_Logic(input logic clk, 
-							input logic reset,
-							input logic [18:0] bufferadd,
-							output);
-							
